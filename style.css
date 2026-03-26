@@ -5,6 +5,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 90px; /* offsets navbar globally */
 }
 
 body {
@@ -150,6 +151,9 @@ header p {
    SECTIONS
 ========================= */
 section {
+    scroll-margin-top: 90px;
+}
+section {
     margin-top: 30px;
 
     /* SMOOTH REVEAL */
@@ -200,7 +204,7 @@ section:hover h2::after {
     margin-bottom: 20px;
     padding: 10px;
     border-radius: 8px;
-    transition: 0.25s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
 
     display: block;
 }
@@ -294,17 +298,16 @@ li:hover {
 /* =========================
    ANIMATION
 ========================= */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(12px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* subtle highlight when section lands */
+section:target {
+    animation: focusFade 0.6s ease;
 }
-/* FIX FOR NAVBAR OVERLAP */
-section {
-    scroll-margin-top: 80px;
+
+@keyframes focusFade {
+    0% {
+        background: rgba(37, 99, 235, 0.05);
+    }
+    100% {
+        background: transparent;
+    }
 }
