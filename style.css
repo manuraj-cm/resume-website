@@ -305,17 +305,12 @@ html {
 section {
     scroll-margin-top: 90px;
 }
-/* ===== SCROLL FIX ===== */
+/* ===== PERFECT SCROLL ALIGNMENT ===== */
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 130px;
+    scroll-padding-top: 90px;
 }
 
 section {
-    scroll-margin-top: 130px;
-}
-
-/* ===== NAVBAR POLISH ===== */
-.navbar:hover {
-    background: rgba(255, 255, 255, 0.9);
+    scroll-margin-top: 90px;
 }
