@@ -5,7 +5,6 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 90px; /* offsets navbar globally */
 }
 
 body {
@@ -305,16 +304,17 @@ html {
 section {
     scroll-margin-top: 90px;
 }
-/* ===== PERFECT SCROLL ALIGNMENT ===== */
+/* smooth scroll */
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 90px;
 }
 
+/* default spacing */
 section {
     scroll-margin-top: 90px;
 }
-/* ===== WORK EXPERIENCE CUSTOM OFFSET ===== */
-#work experience {
-    scroll-margin-top: 30px;
+
+/* custom for work experience */
+#work-experience {
+    scroll-margin-top: 50px;
 }
