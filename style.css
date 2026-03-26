@@ -1,12 +1,14 @@
-/* FONT */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     color: #0f172a;
 
-    /* PREMIUM BACKGROUND SPLIT */
     background: linear-gradient(
         to right,
         #f8fafc 0%,
@@ -18,19 +20,21 @@ body {
 
 /* MAIN CARD */
 .container {
-    width: 100%;
     max-width: 900px;
     margin: 60px auto;
-
     background: white;
     padding: 50px;
-
-    /* DEPTH EFFECT */
-    box-shadow: 
-        0 10px 30px rgba(0,0,0,0.08),
-        0 2px 8px rgba(0,0,0,0.04);
-
     border-radius: 10px;
+
+    box-shadow: 
+        0 15px 40px rgba(0,0,0,0.08),
+        0 5px 15px rgba(0,0,0,0.05);
+
+    transition: 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-3px);
 }
 
 /* HEADER */
@@ -41,9 +45,14 @@ header {
 }
 
 header h1 {
-    font-size: 34px;
+    font-size: 36px;
     margin-bottom: 5px;
     letter-spacing: 1px;
+    transition: 0.2s;
+}
+
+header h1:hover {
+    color: #2563eb;
 }
 
 header p {
@@ -53,15 +62,15 @@ header p {
 
 /* SECTION */
 section {
-    margin-top: 28px;
+    margin-top: 30px;
+    animation: fadeIn 0.6s ease forwards;
 }
 
-/* SECTION TITLE */
+/* TITLES */
 h2 {
     font-size: 13px;
     letter-spacing: 1.5px;
     color: #2563eb;
-
     border-bottom: 2px solid #2563eb;
     padding-bottom: 6px;
     margin-bottom: 15px;
@@ -70,43 +79,6 @@ h2 {
 /* ITEMS */
 .item {
     margin-bottom: 20px;
-}
-
-/* HEADER ROW */
-.item-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.item-header strong {
-    font-weight: 600;
-}
-
-.item-header span {
-    font-size: 13px;
-    color: #64748b;
-}
-
-/* TEXT */
-p {
-    margin: 6px 0;
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-/* SKILLS */
-ul {
-    columns: 2;
-    padding-left: 18px;
-}
-
-li {
-    margin-bottom: 6px;
-}
-
-/* SUBTLE HOVER */
-.item {
     transition: 0.2s ease;
 }
 
@@ -114,4 +86,52 @@ li {
     background: #f1f5f9;
     padding: 10px;
     border-radius: 6px;
+    transform: translateX(4px);
+}
+
+/* HEADER ROW */
+.item-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-header span {
+    color: #64748b;
+}
+
+/* TEXT */
+p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* SKILLS */
+ul {
+    columns: 2;
+}
+
+li {
+    display: inline-block;
+    background: #f1f5f9;
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin: 4px;
+    transition: 0.2s;
+}
+
+li:hover {
+    background: #2563eb;
+    color: white;
+}
+
+/* FADE ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
