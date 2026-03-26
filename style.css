@@ -314,3 +314,7 @@ html {
 section {
     scroll-margin-top: 90px;
 }
+/* ===== WORK EXPERIENCE CUSTOM OFFSET ===== */
+#work-experience {
+    scroll-margin-top: 60px;
+}
