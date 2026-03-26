@@ -1,19 +1,36 @@
+/* FONT */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
 
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
-    background: linear-gradient(to right, #f8fafc 70%, #e2e8f0 30%);
     color: #0f172a;
+
+    /* PREMIUM BACKGROUND SPLIT */
+    background: linear-gradient(
+        to right,
+        #f8fafc 0%,
+        #f8fafc 65%,
+        #e2e8f0 65%,
+        #e2e8f0 100%
+    );
 }
 
-/* CONTAINER */
+/* MAIN CARD */
 .container {
-    width: 800px;
-    margin: 40px auto;
+    width: 100%;
+    max-width: 900px;
+    margin: 60px auto;
+
     background: white;
-    padding: 40px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    padding: 50px;
+
+    /* DEPTH EFFECT */
+    box-shadow: 
+        0 10px 30px rgba(0,0,0,0.08),
+        0 2px 8px rgba(0,0,0,0.04);
+
+    border-radius: 10px;
 }
 
 /* HEADER */
@@ -24,7 +41,7 @@ header {
 }
 
 header h1 {
-    font-size: 32px;
+    font-size: 34px;
     margin-bottom: 5px;
     letter-spacing: 1px;
 }
@@ -36,21 +53,23 @@ header p {
 
 /* SECTION */
 section {
-    margin-top: 25px;
+    margin-top: 28px;
 }
 
+/* SECTION TITLE */
 h2 {
-    font-size: 14px;
-    letter-spacing: 1px;
-    color: #0ea5e9;
-    border-bottom: 2px solid #0ea5e9;
-    padding-bottom: 5px;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    color: #2563eb;
+
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 6px;
     margin-bottom: 15px;
 }
 
 /* ITEMS */
 .item {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 }
 
 /* HEADER ROW */
@@ -71,7 +90,7 @@ h2 {
 
 /* TEXT */
 p {
-    margin: 5px 0;
+    margin: 6px 0;
     font-size: 14px;
     line-height: 1.6;
 }
@@ -86,10 +105,13 @@ li {
     margin-bottom: 6px;
 }
 
-/* HOVER EFFECT */
+/* SUBTLE HOVER */
+.item {
+    transition: 0.2s ease;
+}
+
 .item:hover {
     background: #f1f5f9;
-    padding: 8px;
+    padding: 10px;
     border-radius: 6px;
-    transition: 0.2s;
 }
