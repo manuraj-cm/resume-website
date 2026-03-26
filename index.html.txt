@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manuraj CM | Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <header>
+        <h1>MANURAJ CM</h1>
+        <p>
+            +91 9972414958 | manuraj.cm25@iimb.ac.in
+        </p>
+    </header>
+
+    <!-- ABOUT -->
+    <section>
+        <h2>ABOUT ME</h2>
+        <p>
+            I am a student interested in learning how businesses work in the real world. I initially pursued BBA at 
+            T.A. Pai Institute of Management (TAPMI), but left after one year as I felt the learning was overly 
+            theoretical and focused on memorization rather than understanding.
+        </p>
+        <p>
+            I am currently pursuing IIM Bangalore’s BBA DBE program, which provides flexibility to work with startups, 
+            gain practical exposure, and continuously upskill myself. I am curious, driven, and focused on real-world learning.
+        </p>
+    </section>
+
+    <!-- EDUCATION -->
+    <section>
+        <h2>EDUCATION</h2>
+
+        <div class="item">
+            <strong>Indian Institute of Management, Bangalore</strong>
+            <span>2025 - Present</span>
+            <p>BBA in Digital Business and Entrepreneurship (DBE)</p>
+        </div>
+
+        <div class="item">
+            <strong>T.A. Pai Institute of Management (TAPMI)</strong>
+            <span>2024 - 2025</span>
+            <p>BBA (Completed First Year)</p>
+        </div>
+
+        <div class="item">
+            <strong>Reva Independent PU College</strong>
+            <span>2022 - 2024</span>
+            <p>Commerce Stream</p>
+        </div>
+
+        <div class="item">
+            <strong>Delhi Public School, Bangalore North</strong>
+            <span>Till 2022</span>
+            <p>CBSE</p>
+        </div>
+
+    </section>
+
+    <!-- WORK EXPERIENCE -->
+    <section>
+        <h2>WORK EXPERIENCE</h2>
+
+        <div class="item">
+            <strong>Crazy Holidays</strong>
+            <span>Nov 2025 – Feb 2026</span>
+            <p>
+                Worked across experiential learning tour development, website content management, tour operations, 
+                and field support for school travel programs.
+            </p>
+            <p>
+                Handled both analytical and operational responsibilities, gaining exposure to planning and execution 
+                of educational tours in a real-world environment.
+            </p>
+        </div>
+
+        <div class="item">
+            <strong>Children’s LoveCastles Trust</strong>
+            <span>May 2025 – June 2025</span>
+            <p>
+                Assisted in content development for educational programs and applied design thinking frameworks 
+                to identify and propose solutions for challenges in their mobile learning app.
+            </p>
+        </div>
+
+        <div class="item">
+            <strong>Event Participation – Food Stall Management</strong>
+            <span>Various</span>
+            <p>
+                Set up and managed food stalls at events in Manipal University and Reva University, 
+                gaining hands-on experience in coordination and execution.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+    <section>
+        <h2>SKILLS</h2>
+        <ul>
+            <li>Design Thinking</li>
+            <li>Quick Learner</li>
+            <li>Accountability</li>
+            <li>Efficiency Under Pressure</li>
+            <li>Canva Design</li>
+            <li>Microsoft Office</li>
+        </ul>
+    </section>
+
+</div>
+
+</body>
+</html>
