@@ -318,3 +318,47 @@ section {
 #work-experience {
     scroll-margin-top: 5px;
 }
+
+/* =========================
+   FONT SIZE IMPROVEMENTS
+========================= */
+
+header h1 {
+    font-size: 40px;
+}
+
+header p {
+    font-size: 15px;
+}
+
+h2 {
+    font-size: 14.5px;
+}
+
+p {
+    font-size: 15.5px;
+    line-height: 1.7;
+}
+
+.item-header strong {
+    font-size: 16.5px;
+}
+
+.item-header span {
+    font-size: 14px;
+}
+
+li {
+    font-size: 14px;
+}
+
+
+/* =========================
+   NAVBAR TRANSLUCENCY
+========================= */
+
+.navbar {
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
